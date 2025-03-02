@@ -1,0 +1,144 @@
+body {
+    background-color: #f1d5da; /* 娴呯矇鑹� */
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.c{
+    position: absolute;
+}
+.container {
+    width: 90%; /* 閫傚簲鎵嬫満灞忓箷瀹藉害 */
+    max-width: 500px; /* 鏈€澶у搴﹂檺鍒� */
+}
+
+.div_btn {
+            position: fixed;
+            cursor: pointer;
+            width: 42px;
+            height: 42px;
+            border: 2px solid white;
+            border-radius: 50%;
+            font-size: 1em;
+            line-height: 40px;
+            text-align: center;
+            z-index:999;
+        }
+
+	.more-btn {
+		position: fixed;
+		cursor: pointer;
+		width: 42px;
+		height: 42px;
+		border: 2px solid white;
+		border-radius: 50%;
+		font-size: 1em;
+		line-height: 40px;
+		text-align: center;
+		z-index: 999;
+		top: 90px;
+		background-color: rgba(0, 0, 0, 0.3);
+		right: 20px;
+	}
+
+	.more-btn a {
+		cursor: pointer;
+		color: #fff;
+		text-decoration: none;
+	}
+#mainImage {
+    width: 100%; /* 鍥剧墖瀹藉害鑷€傚簲瀹瑰櫒 */
+    max-width: 200px; /* 鏈€澶у搴﹂檺鍒� */
+    transition: all 0.3s ease;
+}
+
+h1 {
+    font-size: 5vw; /* 瀛椾綋澶у皬鏍规嵁瑙嗗彛瀹藉害鍙樺寲 */
+    color: #68495b;
+    margin: 20px 0; /* 澧炲姞涓婁笅闂磋窛 */
+}
+
+button {
+    font-size: 4vw; /* 瀛椾綋澶у皬鏍规嵁瑙嗗彛瀹藉害鍙樺寲 */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    transition: all 0.3s ease;
+}
+
+#yes {
+    background-color: #d4818e; /* 绮夎壊 */
+    color: white;
+}
+
+#no {
+    background-color: #6784b1; /* 钃濊壊 */
+    color: white;
+    position: relative;
+}
+
+.yes-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffcad382;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.yes-text {
+    font-size: 7vw; /* 瀛椾綋澶у皬鏍规嵁瑙嗗彛瀹藉害鍙樺寲 */
+}
+
+.yes-image {
+    width: 50%; /* 鍥剧墖瀹藉害鑷€傚簲瀹瑰櫒 */
+    max-width: 300px; /* 鏈€澶у搴﹂檺鍒� */
+}
+
+/* 鐢佃剳绔牱寮忎紭鍖� */
+@media (min-width: 768px) {
+    body {
+        display: block;
+    }
+
+    .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: auto;
+        max-width: none;
+    }
+
+    #mainImage {
+        width: 200px; /* 鍥哄畾鍥剧墖瀹藉害 */
+    }
+
+    h1 {
+        font-size: 28px; /* 鍥哄畾瀛椾綋澶у皬 */
+        margin: 20px 0;
+    }
+
+    button {
+        font-size: 18px; /* 鍥哄畾瀛椾綋澶у皬 */
+    }
+
+    .yes-text {
+        font-size: 36px; /* 鍥哄畾瀛椾綋澶у皬 */
+    }
+
+    .yes-image {
+        width: 300px; /* 鍥哄畾鍥剧墖瀹藉害 */
+    }
+}
